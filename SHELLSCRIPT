@@ -1,0 +1,70 @@
+#!/bin/bash
+ps -eo pid,comm,%mem --sort=%mem | head -n 11
+lower to higher 
+
+
+
+
+
+
+highest to lowest 
+
+ps -eo pid,comm,%mem --sort=-%mem | head -n 11
+
+
+
+
+ARITHMETIC 
+echo "Enter two numbers: "
+read num1 num2
+
+echo "Choose an operation: "
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Division"
+read choice
+
+case $choice in
+1) sum=$((num1 + num2))
+   echo "Sum is $sum"
+   ;;
+2) diff=$((num1 - num2))
+   echo "Difference is $diff"
+   ;;
+3) mul=$((num1 * num2))
+   echo "Product is $mul"
+   ;;
+4) if [ "$num2" -ne 0 ]; then
+       div=$((num1 / num2))
+       echo "Division is $div"
+   else
+       echo "Error: Division by zero is not allowed."
+   fi
+   ;;
+*) echo "Invalid choice"
+   ;;
+esac
+
+
+
+logged 
+
+#!/bin/bash
+echo "Current Logged user is $(whoami)"
+echo "Log Name is $LOGNAME"
+
+
+
+
+version 
+#!/bin/bash
+echo "Current Shell: $SHELL"
+echo "Home Directory: $HOME"
+echo "Kernel Version: $(uname -r)"
+
+
+
+
+
+
