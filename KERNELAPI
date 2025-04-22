@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(int argc, char *argv[]){
+    if(argc != 3){
+        fprintf(stderr, "Usage: %s <source> <destinatioN>\n", argv[0]);
+        return EXIT_FAILURE;
+    }
+
+    if(rename(argv[1], argv[2]) == 0){
+        printf("Moved successfully!\n");
+        return EXIT_SUCCESS;
+    }
+
+    if(link(argv[1], argv[2]) == 0){
+        unlink(argv[1]);
+        printf("Moved successfully using link + unlink!\n");
+        return EXIT_SUCCESS;
+    }
+
+    perror("Error moving file");
+    return EXIT_FAILURE;
+}
+
+
+
+
+satya@lab0517:~$ mkdir A
+satya@lab0517:~$ cd A
+satya@lab0517:~/A$ touch "Student.txt"
+satya@lab0517:~/A$ ls
+Student.txt
+satya@lab0517:~/A$ nano Student.txt
+satya@lab0517:~/A$ nano Student.txt
+satya@lab0517:~/A$ mv Student.txt Student.c
+satya@lab0517:~/A$ gcc Student.c -o mv
+satya@lab0517:~/A$ ./mv
+Usage: ./mv<source><destination>
+satya@lab0517:~/A$ mv Student.c Student2.c
+Moved successfully!
+satya@lab0517:~/A$ ls
+Student2.c  mv
+
+
+
