@@ -1,0 +1,134 @@
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ mkdir rohit
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cd rohit
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit/rohit
+$ touch smrp.txt
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit/rohit
+$ ls
+smrp.txt
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit/rohit
+$ cd/
+bash: cd/: No such file or directory
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit/rohit
+$ cd\
+>
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~
+$ cd rohit
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ pwd
+/c/Users/Admin/rohit
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ ls
+hello.txt  hi.txt  rohini.c  rohit/
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cat hello.txt
+how are you feeling
+how are doing?
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ rm hi.txt
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ ls
+hello.txt  rohini.c  rohit/
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ rm rohini.c
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ ls
+hello.txt  rohit/
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ touch hi.txt
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ mv hello.txt
+mv: missing destination file operand after 'hello.txt'
+Try 'mv --help' for more information.
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ mv hello.txt hi.txt
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cat hi.txt
+how are you feeling
+how are doing?
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cat>>hello.txt
+i am rohhit
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cat hello.txt
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cat hi.txt
+how are you feeling
+how are doing?
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cat>hello.txt
+i amm rohit
+
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cat hello.txt
+i amm rohit
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ grep i *.txt
+hello.txt:i amm rohit
+hi.txt:how are you feeling
+hi.txt:how are doing?
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ date
+Tue Apr 22 16:37:40 IST 2025
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ echo 'hello world'
+hello world
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ man ls
+bash: man: command not found
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ gedit hello.txt
+bash: gedit: command not found
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ ps
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+      746     464     746      18984  pty0      197609 16:40:16 /usr/bin/ps
+      463       1     463      12972  ?         197609 14:49:44 /usr/bin/mintty
+      464     463     464      13592  pty0      197609 14:49:44 /usr/bin/bash
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ ps aux
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+      463       1     463      12972  ?         197609 14:49:44 /usr/bin/mintty
+      464     463     464      13592  pty0      197609 14:49:44 /usr/bin/bash
+      750     464     750      19272  pty0      197609 16:40:25 /usr/bin/ps
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ cal
+bash: cal: command not found
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$ wc hello.txt
+ 1  3 12 hello.txt
+
+Admin@DESKTOP-NMLBSJB MINGW64 ~/rohit
+$
