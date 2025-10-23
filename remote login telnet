@@ -1,0 +1,5 @@
+sudo apt install
+sudo systemctl start inetd
+sudo systemctl enable inetd
+hostname -I (for ip address)
+telnet <ip address>
