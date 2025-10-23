@@ -1,0 +1,19 @@
+import socket
+
+# Create a UDP socket
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+server_address = ('127.0.0.1', 65432)
+print(f"Connected to UDP server {server_address[0]}:{server_address[1]}")
+
+while True:
+    message = input("Client: ")
+    client_socket.sendto(message.encode(), server_address)
+
+    if message.lower() == 'exit':
+        break
+
+    data, _ = client_socket.recvfrom(1024)
+    print(f"Server: {data.decode()}")
+
+client_socket.close()
