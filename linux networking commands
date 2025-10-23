@@ -1,13 +1,13 @@
 For Linux:                                              For windows:
 
-ping google.com   <--------------------------------->   ping google.com
-traceroute google.com <----------------------------->   tracert google.com
-nslookup google.com <------------------------------->   nslookup google.com
-netstat -tulnp <------------------------------------>   netstat -ano
-arp -n <-------------------------------------------->   arp -a
-rarp -a <------------------------------------------->   (not available by default)
-ip addr show/ ip route show <----------------------->   
-ifconfig <------------------------------------------>   ipconfig or ipconfig/all
-dig google.com <------------------------------------>   nslookup google.com
-route -n <------------------------------------------>   route print
+ping google.com                                         ping google.com
+traceroute google.com                                   tracert google.com
+nslookup google.com                                     nslookup google.com
+netstat -tulnp                                          netstat -ano
+arp -n                                                  arp -a
+rarp -a                                                 (not available by default)
+ip addr show/ ip route show    
+ifconfig                                                ipconfig or ipconfig/all
+dig google.com                                          nslookup google.com
+route -n                                                route print
 
